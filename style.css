@@ -25,7 +25,7 @@ body{
 .accordion-field{
     width: 90%;
     margin:0 auto 1em;
-    box-shadow: 0 0 10px #bf930b;
+    box-shadow: 0 0 5px #bf930b;
     padding: 0 10px ;
     border-radius: 5px;
 }
