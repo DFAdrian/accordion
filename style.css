@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+.accordion{
+    width: min(100%,500px);
+}
+
+.accordion__title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #EABE3F;
+}
+
+.accordion-field{
+    width: 90%;
+    margin:0 auto 1em;
+    box-shadow: 0 0 10px #bf930b;
+    padding: 0 10px ;
+    border-radius: 5px;
+}
+
+.accordion-field__header{
+    display: flex;
+    align-items: center;
+}
+
+.accordion__question{
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #ffc600;
+}
+
+.accordion__btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.far{
+    color: #f3ca4c;
+    font-size: 1rem;
+}
+
+.accordion__text{
+    border-top: 1px solid #f3ca4c;
+    padding-top: 1em;
+    padding-bottom: 1rem;
+    margin-top: 0;
+    color: #d9ad26;
+}
+
+@media (hover:hover){
+    .accordion__btn:hover{
+        rotate: 45deg;
+    }
+}
+
+/* hide and show content*/
+
+.accordion__text{
+    display: none;
+}
+
+.show-text .accordion__text{
+    display: block;
+}
+
+.minus-icon{
+    display: none;
+}
+
+.show-text .minus-icon{
+    display: inline;
+}
+
+.show-text .plus-icon{
+    display: none;
+}
